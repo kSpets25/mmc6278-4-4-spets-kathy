@@ -12,8 +12,9 @@ CREATE TABLE albums (
 -- create a "name" column that's a varchar of max 100 characters
   name VARCHAR(100) NOT NULL,
 -- create an "artist_id" column that's an integer
-  artist_id INT, NOT NULL,
+  artist_id INT NOT NULL,
 -- create a "release_year" column that's an integer
+  release_year INT NOT NULL,
   FOREIGN KEY (artist_id)
     REFERENCES artists (id)
     ON DELETE CASCADE
@@ -22,13 +23,13 @@ CREATE TABLE albums (
 CREATE TABLE songs (
   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 -- create a "name" column that's a varchar of max 100 characters
-  name VARCHAR (100),
+  name VARCHAR (100) NOT NULL,
 -- create a "track_number" column that's an integer
-  artist_id INT,
+  track_number INT NOT NULL,
 -- create an "artist_id" column that's an integer
-  artist_id INT,
+  artist_id INT NOT NULL,
 -- create an "album_id" column that's an integer
-  albuum_id INT,
+  album_id INT NOT NULL,
   FOREIGN KEY (artist_id)
     REFERENCES artists (id)
     ON DELETE CASCADE,

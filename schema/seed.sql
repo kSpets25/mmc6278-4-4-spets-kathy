@@ -35,7 +35,7 @@ INSERT INTO
 INSERT INTO
   songs (artist_id, album_id, name, track_number)
   VALUES
-    (1, 1, "Battery", 1),
+    (1, 1, "Battery", 1), 
     (1, 1, "Master of Puppets", 2),
     (1, 1, "The Things That Should Not Be", 3),
     (1, 1, "Welcome Home (Sanitarium)", 4),
